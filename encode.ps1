@@ -10,7 +10,7 @@ $p = $c[0]
 for ($i = 1; $i -lt $c.Length; $i++) {
     $w = $c[$i]
     
-    if ($currentByte -eq $p) {
+    if ($w -eq $p) {
         $r++
     } else {
         $v += "t" + $p.ToString("X2") + "y$r"
